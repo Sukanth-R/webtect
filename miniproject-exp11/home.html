@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Models Management</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #ff0000;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #eb6868;
+        }
+
+        nav .nav-link {
+            color: #fff !important;
+        }
+
+        nav .nav-link:hover {
+            background-color: #ff0000;
+            color: #fff !important;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #ff0000;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Adjust image size in carousel */
+        .carousel-item img {
+            max-height: 400px; /* Adjust this value as needed */
+            object-fit: cover;
+        }
+
+        @media (max-width: 768px) {
+            nav .nav-item {
+                margin: 10px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1, footer p {
+                font-size: 18px;
+            }
+
+            nav .nav-link {
+                padding: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>RedBus</h1>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Bus Reservation</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="reservation.html">Book Bus</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="myreservation.html">My Reservation</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="container">
+        <h2>Welcome to Bus Models Management</h2>
+        <p>Select an option from the navigation menu to get started.</p>
+
+        <!-- Carousel -->
+        <div id="busCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#busCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#busCarousel" data-slide-to="1"></li>
+                <li data-target="#busCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="i4.avif" class="d-block w-100" alt="Bus Model 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>Comfortable and spacious seating for long journeys.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="i5.jpg" class="d-block w-100" alt="Bus Model 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>State-of-the-art amenities for a luxurious experience.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="i6.jpeg" class="d-block w-100" alt="Bus Model 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>Eco-friendly and efficient transportation solution.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#busCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#busCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Bus Models Management System</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

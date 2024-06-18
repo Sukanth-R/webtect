@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Models Management</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #444;
+        }
+
+        nav .nav-link {
+            color: #fff !important;
+        }
+
+        nav .nav-link:hover {
+            background-color: #555;
+            color: #fff !important;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .bus-models-list {
+            margin-top: 20px;
+        }
+
+        .card {
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            border-radius: 8px 8px 0 0;
+        }
+
+        .btn-book {
+            background-color: #28a745;
+            border: none;
+            border-radius: 4px;
+        }
+
+        .btn-book:hover {
+            background-color: #218838;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+
+        @media (max-width: 768px) {
+            nav .nav-item {
+                margin: 10px 0;
+            }
+
+            .card {
+                margin-bottom: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1, footer p {
+                font-size: 18px;
+            }
+
+            nav .nav-link {
+                padding: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Select Your Journey</h1>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Bus Models Management</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reservation.html">Book Bus</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="myreservation.html">My Reservation</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="container">
+        <section class="bus-models-list">
+            <h2>Existing Bus Models</h2>
+            <div class="form-group">
+                <select id="destinationSelect" class="form-control">
+                    <option value="">Select Destination</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Coimbatore">Coimbatore</option>
+                    <option value="Erode">Erode</option>
+                    <option value="Madurai">Madurai</option>
+                    <option value="Trichy">Trichy</option>
+                    <option value="Vellore">Vellore</option>
+                </select>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="bus1.avif" class="card-img-top" alt="Bus Model X">
+                        <div class="card-body">
+                            <h5 class="card-title">Model X</h5>
+                            <p class="card-text"><strong>From:</strong>Salem</p>
+                            <p class="card-text"><strong>To:</strong>Chennai</p>
+                            <p class="card-text"><strong>Capacity:</strong> 50</p>
+                            <p class="card-text"><strong>Status:</strong> Active</p>
+                            <a href="reservation.html" class="btn btn-book">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="bus1.avif" class="card-img-top" alt="Bus Model X">
+                        <div class="card-body">
+                            <h5 class="card-title">Model X</h5>
+                            <p class="card-text"><strong>From:</strong>Salem</p>
+                            <p class="card-text"><strong>To:</strong>Coimbatore</p>
+                            <p class="card-text"><strong>Capacity:</strong> 50</p>
+                            <p class="card-text"><strong>Status:</strong> Active</p>
+                            <a href="reservation.html" class="btn btn-book">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="bus1.avif" class="card-img-top" alt="Bus Model X">
+                        <div class="card-body">
+                            <h5 class="card-title">Model X</h5>
+                            <p class="card-text"><strong>From:</strong>Salem</p>
+                            <p class="card-text"><strong>To:</strong>Erode</p>
+                            <p class="card-text"><strong>Capacity:</strong> 50</p>
+                            <p class="card-text"><strong>Status:</strong> Active</p>
+                            <a href="reservation.html" class="btn btn-book">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="bus1.avif" class="card-img-top" alt="Bus Model X">
+                        <div class="card-body">
+                            <h5 class="card-title">Model X</h5>
+                            <p class="card-text"><strong>From:</strong>Salem</p>
+                            <p class="card-text"><strong>To:</strong>Madurai</p>
+                            <p class="card-text"><strong>Capacity:</strong> 50</p>
+                            <p class="card-text"><strong>Status:</strong> Active</p>
+                            <a href="reservation.html" class="btn btn-book">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="bus1.avif" class="card-img-top" alt="Bus Model X">
+                        <div class="card-body">
+                            <h5 class="card-title">Model X</h5>
+                            <p class="card-text"><strong>From:</strong>Salem</p>
+                            <p class="card-text"><strong>To:</strong>Trichy</p>
+                            <p class="card-text"><strong>Capacity:</strong> 50</p>
+                            <p class="card-text"><strong>Status:</strong> Active</p>
+                            <a href="reservation.html" class="btn btn-book">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="bus1.avif" class="card-img-top" alt="Bus Model X">
+                        <div class="card-body">
+                            <h5 class="card-title">Model X</h5>
+                            <p class="card-text"><strong>From:</strong>Salem</p>
+                            <p class="card-text"><strong>To:</strong>Vellore</p>
+                            <p class="card-text"><strong>Capacity:</strong> 50</p>
+                            <p class="card-text"><strong>Status:</strong> Active</p>
+                            <a href="reservation.html" class="btn btn-book">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Bus Models Management System</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('destinationSelect').addEventListener('change', function() {
+            var selectedDestination = this.value.trim().toLowerCase();
+            var cards = document.querySelectorAll('.bus-models-list .card');
+
+            cards.forEach(function(card) {
+                var destination = card.querySelector('.card-text:nth-child(2)').textContent.trim().toLowerCase();
+                var cardParent = card.parentElement;
+                if (selectedDestination === '' || destination.includes(selectedDestination)) {
+                    cardParent.style.display = 'block';
+                } else {
+                    cardParent.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
