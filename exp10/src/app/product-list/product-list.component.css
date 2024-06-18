@@ -1,0 +1,93 @@
+/* General styles for the product list container */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f8f8f8; /* Light background color for the container */
+}
+
+/* Styles for individual product cards */
+.product-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px;
+  width: calc(20% - 40px); /* Adjust to display 5 products per row */
+  box-sizing: border-box;
+  text-align: center;
+  margin: 10px; /* Add margin for spacing */
+  background-color: rgb(0, 0, 0); /* Background color for the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the card */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+.product-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Styles for the product images */
+.product-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px; /* Margin below the image */
+}
+
+/* Styles for the product titles */
+.product-card h2 {
+  font-size: 1.5em;
+  margin: 12px 0;
+  color: #ffff00; /* Darker color for text */
+  font-weight: 600; /* Slightly bolder text */
+}
+
+/* Styles for the product descriptions */
+.product-card p {
+  margin: 8px 0;
+  color: #ffff00; /* Grey color for descriptions */
+  font-size: 0.9em; /* Slightly smaller font size */
+}
+
+/* Styles for the buttons */
+.product-card button {
+  background-color: #ffff00;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em; /* Standard font size */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.product-card button:hover {
+  background-color: #000000; /* Darker blue on hover */
+  color:#ffff00;
+}
+
+/* Responsive design: Adjust layout for smaller screens */
+@media (max-width: 1200px) {
+  .product-card {
+    width: calc(25% - 40px); /* 4 products per row */
+  }
+}
+
+@media (max-width: 992px) {
+  .product-card {
+    width: calc(33.33% - 40px); /* 3 products per row */
+  }
+}
+
+@media (max-width: 768px) {
+  .product-card {
+    width: calc(50% - 40px); /* 2 products per row */
+  }
+}
+
+@media (max-width: 576px) {
+  .product-card {
+    width: calc(100% - 40px); /* 1 product per row */
+  }
+}

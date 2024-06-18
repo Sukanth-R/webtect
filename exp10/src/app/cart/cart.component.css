@@ -1,0 +1,75 @@
+/* Container for the cart */
+.cart-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Styles for empty cart message */
+.cart-empty {
+  text-align: center;
+  font-size: 1.5em;
+  color: #888;
+  margin: 50px 0;
+}
+
+/* Styles for each item in the cart */
+.cart-item {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+}
+
+/* Styles for the item details */
+.cart-item h2 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.cart-item p {
+  margin: 5px 0;
+  font-size: 1em;
+  color: #555;
+}
+
+/* Styles for the product image */
+.product-image {
+  margin-left: 20px;
+  border: 1px solid #ddd;
+  padding: 5px;
+  background-color: #fff;
+  height: 200px;
+  width: 130px;
+  object-fit: contain;
+}
+
+/* Styles for the order placed message */
+.order-placed {
+  text-align: center;
+  font-size: 1.5em;
+  color: green;
+  margin: 50px 0;
+}
+
+/* Styles for the buttons */
+button {
+  background-color: #fffb00;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #000000;
+  color:#fffb00;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
